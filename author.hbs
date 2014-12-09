@@ -5,10 +5,10 @@
 
 {{! Everything inside the #author tags pulls data from the author }}
 {{#author}}
-    <header class="main-header author-head {{#if cover}}" style="background-image: url({{cover}}){{else}}no-cover{{/if}}">
+    <header class="main-header author-head no-cover">
         <nav class="main-nav overlay clearfix">
-            <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
-            <a class="subscribe-button icon-feed" href="{{url}}rss/">{{name}}</a>
+            <a class="wo-type-logo" href="{{@blog.url}}"><strong>{{@blog.title}}</strong><br/><span>{{@blog.description}}</span></a>
+            <a class="subscribe-button" href="https://www.workingon.co/get-started">Get Started</a>
         </nav>
     </header>
 
