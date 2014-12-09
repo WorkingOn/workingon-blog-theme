@@ -717,7 +717,7 @@ margin on the iframe, cause it breaks stuff. */
     width:20px;
 }
 
-.main-nav.overlay .wo-logo:hover {
+.main-page .main-nav.overlay .wo-logo:hover {
     /*background-color: rgba(30,30,30,.7);*/
     background: transparent;
     border:solid 1px #F3F3F3;
