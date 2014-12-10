@@ -649,6 +649,9 @@ margin on the iframe, cause it breaks stuff. */
 
 .sumome-smartbar-close {
     margin-right:20px;
+    z-index: 9999 !important;
+    height: 30px;
+    width: 30px;
 }
 
 /* Special styles when overlaid on an image*/
