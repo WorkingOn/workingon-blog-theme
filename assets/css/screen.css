@@ -825,7 +825,7 @@ body.post-template .post-title {
     font-size: 5rem;
 }
 body:not(.post-template) .post-title {
-    font-size: 3.6rem;
+    font-size: 4.0rem;
 }
 
 .post-title a {
@@ -1420,15 +1420,20 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 .site-footer {
+    background-color:#222;
     position: relative;
     margin: 8rem 0 0 0;
     padding: 0.5rem 15px;
     border-top: #EBF2F6 1px solid;
-    /*font-family: "Open Sans", sans-serif;*/
     font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
     color: #BBC7CC;
+}
+
+.inner-footer {
+    max-width: 980px;
+    margin:0 auto;
 }
 
 .site-footer a {
@@ -1455,9 +1460,120 @@ body:not(.post-template) .post-title {
 }
 
 
+.row.dark {
+    background-color:#222;
+    color:#F3F3F3;
+    padding:100px 0 100px 0;
+    text-align: center;
+}
+
+.row h2 {
+    margin:0;
+    padding: 0;
+}
+
+.row h2 {
+    font-size: 50px;
+    color:#fff;
+}
+
+.site-footer .btn {
+    margin-top: 40px;
+}
+
+.site-footer .dark h3 {
+    font-size:24px; 
+    margin-top:10px;
+    text-align:center;
+    color:#CCC; 
+    font-weight:300
+}
+
+.site-footer .dark h4 {
+    font-size:20px; 
+    margin-top:10px;
+    text-align:center;
+    color:#999999; 
+    font-weight:300
+}
+
+
+.btn{
+    color:#FFF;
+    background-color:#3cE;
+    padding:10px 20px;
+    border-radius:5px;
+    line-height: 2.4;
+}
+
+.btn:hover, .btn:active {
+    color:#fff;
+    background-color: #34D7FA;
+}
+
+.btn.red-btn {
+    background-color: #E33;
+    color:#fff;
+    font-weight: 500;
+    font-size: 22px;
+    height:40px; 
+    line-height: 40px; 
+    display:inline-block; 
+    font-size:22px; 
+    padding: 10px 40px;
+}
+
+
+.btn.red-btn:hover, .red-btn:active {
+    color:#fff;
+    background-color: #F83737;
+}
+
+.btn.dark-btn {
+    background-color: transparent;
+    color:#fff;
+    border:solid 2px #fff;
+    font-weight: 500;
+    font-size: 22px;
+    height:40px; 
+    line-height: 40px; 
+    display:inline-block; 
+    font-size:22px; 
+    padding: 10px 40px;
+    transition: ease 0.3s;
+}
+
+
+.btn.dark-btn:hover, .dark-btn:active {
+    color:#FFF;
+    border-color: #F83737;
+    background-color: #F83737;
+}
+
+
+.btn.read-more {
+    margin:20px auto !important;
+    display: inline-block;
+    padding:0 10px 0 10px;
+    font-size: 18px;
+    /*font-weight: 500;*/
+    color:#999;
+    border:solid 1px #999;
+    background: transparent;
+    transition: ease 0.3s;
+    float:right;
+}
+
+.btn.read-more:hover, .read-more:active {
+    color:#FFF;
+    border-color: #33CCEE;
+    background-color: #33CCEE;
+}
+
+
 .main-nav.overlay .wo-type-logo {
     float:left;
-    line-height:17px;
+    line-height:20px;
     text-align:left;
     margin-top:5px;
     font-size:2.0rem;

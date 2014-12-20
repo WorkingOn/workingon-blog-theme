@@ -2,15 +2,15 @@
 <div class="extra-pagination inner">
     {{pagination}}
 </div>
-
-{{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
+{{#if featured}}
 <article class="{{post_class}}">
     <header class="post-header">
         <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
     </header>
     <section class="post-excerpt">
-        <p>{{excerpt words="90"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+        <p>{{excerpt words="90"}}</p>
+        <a class="read-more btn" href="{{url}}">Continue reading &rarr;</a>
     </section>
     <footer class="post-meta">
         {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}
@@ -19,6 +19,28 @@
         <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
     </footer>
 </article>
+{{/if}}
+{{/foreach}}
+
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+{{^if featured}}
+<article class="{{post_class}}">
+    <header class="post-header">
+        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>{{excerpt words="90"}}</p>
+        <a class="read-more btn" href="{{url}}">Continue reading &rarr;</a>
+    </section>
+    <footer class="post-meta">
+        {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}
+        {{author}}
+        {{tags prefix=" on "}}
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+    </footer>
+</article>
+{{/if}}
 {{/foreach}}
 
 {{! Previous/next page links - displayed on every page }}
